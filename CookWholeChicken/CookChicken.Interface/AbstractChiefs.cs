@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.AttributeExtend;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace CookChicken.Interface
 {
     public abstract class AbstractChiefs
     {
+        [RemarkAttribute("Cook")]
         public string Chief { get; set; }
         public string Leeks { get; set; }
         public string Ginger { get; set; }
